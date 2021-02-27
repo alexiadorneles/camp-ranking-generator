@@ -1,0 +1,19 @@
+{
+  "name": "ranking-generator",
+  "version": "1.0.0",
+  "description": "Ranking generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexiadorneles",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0"
+  }
+}
