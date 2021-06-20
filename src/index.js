@@ -70,10 +70,11 @@ const createElement = (item, i) => {
   span.appendChild(p);
   span.appendChild(points);
   image.src = cabinImages[item.idCabin - 1];
-  if (i > 9) {
-    image.setAttribute('class', 'small-img');
-    div.setAttribute('class', 'small-divinity')
-  }
+  // if 20 uncomment
+  // if (i > 9) {
+  //   image.setAttribute('class', 'small-img');
+  //   div.setAttribute('class', 'small-divinity')
+  // }
   div.appendChild(image);
   div.appendChild(span);
   return div;
@@ -124,6 +125,8 @@ function main() {
       flexDiv.setAttribute('class', 'flex-div');
       return;
     }
+    // removing 18 and 19
+    if ([18, 19].includes(item.idCabin)) return
     const element = createElement(item, i);
     flexDiv.appendChild(element);
   });
